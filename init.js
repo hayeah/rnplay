@@ -1,5 +1,5 @@
 var root = process.cwd();
 
-var cli = require("react-native/cli")
+var cli = require("react-native/cli");
 
-cli.init(root, "SampleApp");
+cli.init(root, "RNPlay");

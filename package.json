@@ -9,6 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bin": {
+    "rnplay": "./cli.js"
+  },
   "dependencies": {
     "react": "^0.14.8",
     "react-native": "^0.24.1"
