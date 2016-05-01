@@ -1,6 +1,10 @@
 # ReactNative Playground
 
+Current ReactNative version: 0.24.1.
 
+Right now there is no easy way to make quick ReactNative experiments. Everytime `react-native init` runs it installs ReactNative all over again.
+
+This package provides a ReactNative container app (similar to rnplay.org) that you can use to run adhoc experiments without having to create new ReactNative projects.
 
 # Install
 
@@ -10,18 +14,43 @@ npm install -g rnplay
 
 # Running Package Server
 
+In any directory that contains `index.ios.js` and `index.android.js`, start the packager:
+
 ```
 $ rnplay server
 ```
 
-# Running iOS
+Try downloading the JavaScript bundle with curl:
+
+```
+$ curl localhost:8081/index.ios.bundle
+__DEV__=true;
+
+global.__BUNDLE_START_TIME__=Date.now();
+})(typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : this);
+(function(global) {var
+modules=Object.create(null);
+var inGuard=false;
+
+function define(id,factory){
+modules[id]={
+...
+```
+
+# Launch RNPlay Container App
+
+You only need to launch the container app once. If you want to do another experiment, navigate to another directory and restart the packager server.
+
+## iOS App
+
+Launch the RNPlay App in an iOS simulator:
 
 ```
 # Default to 'iPhone 6 Plus'
 $ rnplay ios
 ```
 
-You can also switch to a different simulator
+You can switch to a different simulator
 
 ```
 # Default to 'iPhone 6'
@@ -71,8 +100,12 @@ $ xcrun simctl list devices
     Apple Watch - 42mm (69DB47DF-5AF0-49FD-9CEC-670CBE26ABB4) (Shutdown) (unavailable, runtime profile not found)
 ```
 
-# Running Android
+## Android App
+
+Invoke Gradle to build and deploy the app:
 
 ```
-rnplay android
+$ rnplay android
 ```
+
+You'll need to start an Android device on your own, so Gradle can install the app onto it. Use [Genymotion](https://www.genymotion.com/)
