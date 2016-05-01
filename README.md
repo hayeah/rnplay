@@ -12,7 +12,7 @@ This package provides a ReactNative container app (similar to rnplay.org) that y
 npm install -g rnplay
 ```
 
-# Running Package Server
+# Running The Package Server
 
 In any directory that contains `index.ios.js` and `index.android.js`, start the packager:
 
@@ -36,6 +36,8 @@ function define(id,factory){
 modules[id]={
 ...
 ```
+
+Note: Port 8081 is hardwired in a few places within ReactNative. Not easy to change, sorry.
 
 # Launch RNPlay Container App
 
