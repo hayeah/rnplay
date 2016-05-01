@@ -12,12 +12,12 @@ This package provides a ReactNative container app (similar to rnplay.org) that y
 npm install -g rnplay
 ```
 
-# Running The Package Server
+# Running The Packager
 
 In any directory that contains `index.ios.js` and `index.android.js`, start the packager:
 
 ```
-$ rnplay server
+$ rnplay packager
 ```
 
 Try downloading the JavaScript bundle with curl:
