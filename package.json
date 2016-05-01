@@ -1,5 +1,5 @@
 {
-  "name": "rnplay",
+  "name": "react-native-playground",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Howard Yeh",
+  "license": "MIT",
   "bin": {
     "rnplay": "./cli.js"
   },
