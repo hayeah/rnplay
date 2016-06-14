@@ -55,8 +55,12 @@ function runAndroid() {
 
 const commands = {
   "packager": runPackager,
+  "serve": runPackager,
   "ios": runIOS,
-  "runAndroid": runAndroid,
+  "run-ios": runIOS,
+  "android": runAndroid,
+  "run-android": runAndroid,
+
 }
 
 const command = commands[process.argv[2]];
