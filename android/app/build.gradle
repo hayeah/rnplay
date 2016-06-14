@@ -99,12 +99,7 @@ android {
         }
     }
     buildTypes {
-        debug {
-            resValue "string", "packager_port", "8888"
-        }
         release {
-            resValue "string", "packager_port", "8888"
-
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
