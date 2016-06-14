@@ -1,10 +1,16 @@
 # ReactNative Playground
 
-Current ReactNative version: 0.24.1.
+Current ReactNative version: 0.27
 
 Right now there is no easy way to make quick ReactNative experiments. Everytime `react-native init` runs it installs ReactNative all over again.
 
 This package provides a ReactNative container app (similar to rnplay.org) that you can use to run adhoc experiments without having to create new ReactNative projects.
+
+## Versioning Policy
+
+RNPlay's major and minor version numbers track ReactNative's version number.
+
+So rnplay 0.27.x would bundle ReactNative 0.27.x.
 
 # Install
 
